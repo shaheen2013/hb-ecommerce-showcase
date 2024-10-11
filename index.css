@@ -1,5 +1,8 @@
 body{
-      font-family: "Inter", sans-serif;
+      font-family: "Poppins", sans-serif;
+}
+.pp-eiko-font{
+      font-family: "PP Eiko Medium";
 }
 .swiper-slide{
       height: 100%;
@@ -57,4 +60,24 @@ body{
                     }
             }
         }
+}
+.plat-form-card-wrapper{
+      svg{
+            path{
+                  stroke: #D29712;
+            }
+      }
+      &:hover{
+            background:#D29712 ;
+            transition: .3s all;
+            span{
+                  color: #ffff;
+            }
+            svg{
+                  path{
+                        stroke: #fff;
+                  }
+            }
+      }
+     
 }

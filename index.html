@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://db.onlinewebfonts.com/c/6b2d532d2a62dade858748f086e69043?family=PP+Eiko+Medium" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -98,7 +101,7 @@
                   elit tellus.
                 </p>
                 <a
-                  class="cursor-pointer flex items-center gap-3 bg-red-200 hover:bg-[#D29712] justify-center py-2 px-6 text-base font-semibold text-white border border-white bg-white/20 backdrop-blur-sm hover:border-[#D29712]"
+                  class="uppercase cursor-pointer flex items-center gap-3 bg-red-200 hover:bg-[#D29712] justify-center py-2 px-6 text-base font-semibold text-white border border-white bg-white/20 backdrop-blur-sm hover:border-[#D29712]"
                 >
                   Get Started
                   <svg
@@ -129,7 +132,7 @@
                   elit tellus.
                 </p>
                 <a
-                  class="cursor-pointer flex items-center gap-3 bg-red-200 hover:bg-[#D29712] justify-center py-2 px-6 text-base font-semibold text-white border border-white bg-white/20 backdrop-blur-sm hover:border-[#D29712]"
+                  class="uppercase cursor-pointer flex items-center gap-3 bg-red-200 hover:bg-[#D29712] justify-center py-2 px-6 text-base font-semibold text-white border border-white bg-white/20 backdrop-blur-sm hover:border-[#D29712]"
                 >
                   Start Designing
                   <svg
@@ -161,7 +164,7 @@
                   <div
                     class="relative flex items-center justify-between gap-3 min-w-[250px]"
                   >
-                    <div class="swiper-button-pre" id="prevButtonn">
+                    <div class="swiper-button-pre hover:bg-[#1C395F] min-h-4 h-8 w-8 min-w-8 flex items-center justify-center rounded-full" id="prevButtonn">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -181,7 +184,7 @@
                     <div
                       class="swiper-pagination static flex items-center justify-center"
                     ></div>
-                    <div id="nextButtonn">
+                    <div id="nextButtonn" class="hover:bg-[#1C395F] min-h-4 h-8 w-8 min-w-8 flex items-center justify-center rounded-full">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -287,7 +290,7 @@
         <div class="flex items-center justify-center md:mt-8 mt-6">
           <a
             href="#"
-            class="py-2 px-6 m-auto bg-[#D29712] max-w-[240px] w-full text-center text-base text-white font-semibold hover:bg-slate-600"
+            class="uppercase py-2 px-6 m-auto bg-[#D29712] max-w-[240px] w-full text-center text-base text-white font-semibold hover:bg-[#1C395F]"
             >Get Started</a
           >
         </div>
@@ -347,8 +350,10 @@
               />
             </div>
           </div>
-          <div class="md:col-span-4 span-12">
-            <div class="md:col-span-4 span-12 flex flex-col justify-center h-full">
+
+            <div
+              class="md:col-span-4 span-12 flex flex-col justify-center h-full"
+            >
               <div class="p-6 border border-gray-300 sm:mb-6 mb-4">
                 <div class="flex gap-8 justify-start">
                   <img
@@ -360,38 +365,155 @@
                     <h3
                       class="text-xl font-semibold text-[#111928] mb-3 text-start"
                     >
-                    Increase Your Earnings
+                      Increase Your Earnings
                     </h3>
                     <p class="text-base text-[#435B7A] text-start">
-                      Expand your earning potential with new project opportunities. Our platform opens doors to high-value clients and premium projects, ensuring you get the best return on your work.
+                      Expand your earning potential with new project
+                      opportunities. Our platform opens doors to high-value
+                      clients and premium projects, ensuring you get the best
+                      return on your work.
                     </p>
                   </div>
                 </div>
               </div>
               <div class="p-6 border border-gray-300">
                 <div class="flex gap-8 justify-start">
-                  <img
-                    src="./img/boost.png"
-                    class="h-[54px] w-[54px]"
-                    alt=""
-                  />
+                  <img src="./img/boost.png" class="h-[54px] w-[54px]" alt="" />
                   <div>
                     <h3
                       class="text-xl font-semibold text-[#111928] mb-3 text-start"
                     >
-                    Boost Your Exposure
+                      Boost Your Exposure
                     </h3>
                     <p class="text-base text-[#435B7A] text-start">
-                      Showcase your portfolio to a wider audience. Get featured in front of clients actively looking for designers and manufacturers, and let your work speak for itself.
+                      Showcase your portfolio to a wider audience. Get featured
+                      in front of clients actively looking for designers and
+                      manufacturers, and let your work speak for itself.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
+       
+        </div>
+      </div>
+    </div>
+    <!-- project calculate -->
+    <div class="bg-[#1C395F] md:py-16 py-8">
+      <div class="container m-auto px-4">
+        <div class="grid grid-cols-12 sm:gap-6 gap-4">
+          <div
+            class="col-span-3 flex items-center justify-center sm:gap-6 gap-4"
+          >
+            <div>
+              <h3
+                class="text-white text-4xl font-medium leading-[54px] text-center pp-eiko-font"
+              >
+                10,000+
+              </h3>
+              <p class="text-xl text-white font-medium text-center">
+                Projects Completed
+              </p>
+              <p class="text-base text-[#BBC3CD] text-center mt-3">
+                We’ve facilitated over 10,000 successful design and
+                manufacturing projects across diverse industries.
+              </p>
+            </div>
+            <div class="h-20 w-[1px] bg-gray-300"></div>
+          </div>
+          <div
+            class="col-span-3 flex items-center justify-center sm:gap-6 gap-4"
+          >
+            <div>
+              <h3
+                class="text-white text-4xl font-medium leading-[54px] text-center pp-eiko-font"
+              >
+                5,000+
+              </h3>
+              <p class="text-xl text-white font-medium text-center">
+                Active Clients
+              </p>
+              <p class="text-base text-[#BBC3CD] text-center mt-3">
+                Our platform is the go-to solution for more than 5,000
+                businesses, helping them connect with clients and boost their
+                sales.
+              </p>
+            </div>
+            <div class="h-20 w-[1px] bg-gray-300"></div>
+          </div>
+          <div
+            class="col-span-3 flex items-center justify-center sm:gap-6 gap-4"
+          >
+            <div>
+              <h3
+                class="text-white text-4xl font-medium leading-[54px] text-center pp-eiko-font"
+              >
+                30%
+              </h3>
+              <p class="text-xl text-white font-medium text-center">
+                Avg Increase in Earnings
+              </p>
+              <p class="text-base text-[#BBC3CD] text-center mt-3">
+                On average, our users report a 30% increase in earnings after
+                joining our platform.
+              </p>
+            </div>
+            <div class="h-20 w-[1px] bg-gray-300"></div>
+          </div>
+          <div class="col-span-3 px-4">
+            <div>
+              <h3
+                class="text-white text-4xl font-medium leading-[54px] text-center pp-eiko-font"
+              >
+                80%
+              </h3>
+              <p class="text-xl text-white font-medium text-center">
+                Faster Collaboration
+              </p>
+              <p class="text-base text-[#BBC3CD] text-center mt-3">
+                Our tools help speed up collaboration between designers and
+                manufacturers, reducing project timelines by up to 80%.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- maximize -->
+     <div class="bg-[#F9F9F9] md:py-16 py-8">
+      <div class="container px-4 m-auto">
+        <h3 class="text-4xl font-bold leading-[54px] text-center">
+        <span class="text-[#D29712]">
+            Maximize Your Potential</span
+          > <br />with Our Platform
+        </h3>
+        <div class="flex items-cener justify-center">
+          <p class="text-center text-lg text-[#435B7A] mt-4 ">
+            Unlock opportunities to showcase your talent, collaborate effectively, and promote your business—all in one place.
+          </p>
+          </div>
+          <div class="grid grid-cols-12 gap-6 md:mt-12 mt-6">
+           <div class="col-span-4 ">
+            <div class="py-[23px] px-6 border border-gray-300 flex items-center gap-6 justify-between  cursor-pointer plat-form-card-wrapper sm:mb-6 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                <path d="M14.0528 20.7342L7.4423 12.4711C7.0308 11.9567 6.82504 11.6996 6.67873 11.4132C6.54892 11.1591 6.45405 10.8886 6.39669 10.6091C6.33203 10.2941 6.33203 9.96472 6.33203 9.306V8.23329C6.33203 6.45979 6.33203 5.57304 6.67718 4.89566C6.98078 4.29981 7.46521 3.81537 8.06106 3.51177C8.73845 3.16663 9.6252 3.16663 11.3987 3.16663H26.5987C28.3722 3.16663 29.2589 3.16663 29.9363 3.51177C30.5322 3.81537 31.0166 4.29981 31.3202 4.89566C31.6654 5.57304 31.6654 6.45979 31.6654 8.23329V9.306C31.6654 9.96472 31.6654 10.2941 31.6007 10.6091C31.5433 10.8886 31.4485 11.1591 31.3187 11.4132C31.1724 11.6996 30.9666 11.9567 30.5551 12.4711L23.9446 20.7342M7.91545 4.74995L18.9988 19L30.082 4.74995M24.5966 21.3187C27.6883 24.4103 27.6883 29.4229 24.5966 32.5146C21.505 35.6062 16.4924 35.6062 13.4008 32.5146C10.3091 29.4229 10.3091 24.4104 13.4008 21.3187C16.4924 18.227 21.505 18.227 24.5966 21.3187Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="flex items-center gap-2 text-xl text-[#111928] font-semibold">
+                 <span> Get Recognized in the Industry</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9.51562 7.03454L14.4811 12.0001L9.51562 16.9656" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+           </div>
+           <div class="col-span-8">
+            
+           </div>
+           <div id="card-container"></div>
+          </div>
+  
+
+     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script>
@@ -450,5 +572,76 @@
         });
       });
     </script>
+    <!-- <script>
+      const cardData = [
+        {
+          "id": 1,
+          "title": "Get Recognized in the Industry",
+          "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox='0 0 38 38' fill='none'><path d='M14.0528 20.7342L7.4423 12.4711C7.0308 11.9567 6.82504 11.6996 6.67873 11.4132C6.54892 11.1591 6.45405 10.8886 6.39669 10.6091C6.33203 10.2941 6.33203 9.96472 6.33203 9.306V8.23329C6.33203 6.45979 6.33203 5.57304 6.67718 4.89566C6.98078 4.29981 7.46521 3.81537 8.06106 3.51177C8.73845 3.16663 9.6252 3.16663 11.3987 3.16663H26.5987C28.3722 3.16663 29.2589 3.16663 29.9363 3.51177C30.5322 3.81537 31.0166 4.29981 31.3202 4.89566C31.6654 5.57304 31.6654 6.45979 31.6654 8.23329V9.306C31.6654 9.96472 31.6654 10.2941 31.6007 10.6091C31.5433 10.8886 31.4485 11.1591 31.3187 11.4132C31.1724 11.6996 30.9666 11.9567 30.5551 12.4711L23.9446 20.7342M7.91545 4.74995L18.9988 19L30.082 4.74995M24.5966 21.3187C27.6883 24.4103 27.6883 29.4229 24.5966 32.5146C21.505 35.6062 16.4924 35.6062 13.4008 32.5146C10.3091 29.4229 10.3091 24.4104 13.4008 21.3187C16.4924 18.227 21.505 18.227 24.5966 21.3187Z' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/></svg>"
+        },
+        {
+          "id": 2,
+          "title": "Learn New Skills",
+          "icon": "<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+<path d="M4.7513 25.3334V11.4C4.7513 9.62654 4.7513 8.73979 5.09645 8.0624C5.40005 7.46656 5.88449 6.98212 6.48033 6.67852C7.15772 6.33337 8.04447 6.33337 9.81797 6.33337H28.1846C29.9581 6.33337 30.8449 6.33337 31.5223 6.67852C32.1181 6.98212 32.6026 7.46656 32.9062 8.0624C33.2513 8.73979 33.2513 9.62654 33.2513 11.4V25.3334H24.8006C24.4134 25.3334 24.2197 25.3334 24.0375 25.3771C23.876 25.4159 23.7215 25.4799 23.5798 25.5667C23.4201 25.6646 23.2831 25.8015 23.0093 26.0754L22.91 26.1747C22.6361 26.4486 22.4992 26.5855 22.3394 26.6834C22.1978 26.7702 22.0433 26.8342 21.8818 26.873C21.6995 26.9167 21.5059 26.9167 21.1186 26.9167H16.884C16.4967 26.9167 16.3031 26.9167 16.1209 26.873C15.9593 26.8342 15.8048 26.7702 15.6632 26.6834C15.5034 26.5855 15.3665 26.4486 15.0926 26.1747L14.9933 26.0754C14.7195 25.8015 14.5825 25.6646 14.4228 25.5667C14.2811 25.4799 14.1266 25.4159 13.9651 25.3771C13.7829 25.3334 13.5892 25.3334 13.202 25.3334H4.7513ZM4.7513 25.3334C3.87685 25.3334 3.16797 26.0423 3.16797 26.9167V27.4445C3.16797 28.4261 3.16797 28.9169 3.27587 29.3196C3.56868 30.4124 4.42225 31.266 5.51504 31.5588C5.91774 31.6667 6.40855 31.6667 7.39019 31.6667H30.6124C31.594 31.6667 32.0849 31.6667 32.4876 31.5588C33.5804 31.266 34.4339 30.4124 34.7267 29.3196C34.8346 28.9169 34.8346 28.4261 34.8346 27.4445C34.8346 26.9537 34.8346 26.7083 34.7807 26.5069C34.6343 25.9605 34.2075 25.5337 33.6611 25.3873C33.4598 25.3334 33.2143 25.3334 32.7235 25.3334H31.668" stroke="#D29712" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+"
+        },
+        {
+          "id": 3,
+          "title": "Grow Your Network",
+          "icon": "<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+<path d="M13.3 4.75H7.28333C6.39658 4.75 5.95321 4.75 5.61452 4.92257C5.31659 5.07437 5.07437 5.31659 4.92257 5.61452C4.75 5.95321 4.75 6.39658 4.75 7.28333V13.3C4.75 14.1868 4.75 14.6301 4.92257 14.9688C5.07437 15.2667 5.31659 15.509 5.61452 15.6608C5.95321 15.8333 6.39658 15.8333 7.28333 15.8333H13.3C14.1868 15.8333 14.6301 15.8333 14.9688 15.6608C15.2667 15.509 15.509 15.2667 15.6608 14.9688C15.8333 14.6301 15.8333 14.1868 15.8333 13.3V7.28333C15.8333 6.39658 15.8333 5.95321 15.6608 5.61452C15.509 5.31659 15.2667 5.07437 14.9688 4.92257C14.6301 4.75 14.1868 4.75 13.3 4.75Z" stroke="#D29712" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30.7167 4.75H24.7C23.8133 4.75 23.3699 4.75 23.0312 4.92257C22.7333 5.07437 22.491 5.31659 22.3392 5.61452C22.1667 5.95321 22.1667 6.39658 22.1667 7.28333V13.3C22.1667 14.1868 22.1667 14.6301 22.3392 14.9688C22.491 15.2667 22.7333 15.509 23.0312 15.6608C23.3699 15.8333 23.8133 15.8333 24.7 15.8333H30.7167C31.6034 15.8333 32.0468 15.8333 32.3855 15.6608C32.6834 15.509 32.9256 15.2667 33.0774 14.9688C33.25 14.6301 33.25 14.1868 33.25 13.3V7.28333C33.25 6.39658 33.25 5.95321 33.0774 5.61452C32.9256 5.31659 32.6834 5.07437 32.3855 4.92257C32.0468 4.75 31.6034 4.75 30.7167 4.75Z" stroke="#D29712" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30.7167 22.1667H24.7C23.8133 22.1667 23.3699 22.1667 23.0312 22.3392C22.7333 22.491 22.491 22.7333 22.3392 23.0312C22.1667 23.3699 22.1667 23.8133 22.1667 24.7V30.7167C22.1667 31.6034 22.1667 32.0468 22.3392 32.3855C22.491 32.6834 22.7333 32.9256 23.0312 33.0774C23.3699 33.25 23.8133 33.25 24.7 33.25H30.7167C31.6034 33.25 32.0468 33.25 32.3855 33.0774C32.6834 32.9256 32.9256 32.6834 33.0774 32.3855C33.25 32.0468 33.25 31.6034 33.25 30.7167V24.7C33.25 23.8133 33.25 23.3699 33.0774 23.0312C32.9256 22.7333 32.6834 22.491 32.3855 22.3392C32.0468 22.1667 31.6034 22.1667 30.7167 22.1667Z" stroke="#D29712" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.3 22.1667H7.28333C6.39658 22.1667 5.95321 22.1667 5.61452 22.3392C5.31659 22.491 5.07437 22.7333 4.92257 23.0312C4.75 23.3699 4.75 23.8133 4.75 24.7V30.7167C4.75 31.6034 4.75 32.0468 4.92257 32.3855C5.07437 32.6834 5.31659 32.9256 5.61452 33.0774C5.95321 33.25 6.39658 33.25 7.28333 33.25H13.3C14.1868 33.25 14.6301 33.25 14.9688 33.0774C15.2667 32.9256 15.509 32.6834 15.6608 32.3855C15.8333 32.0468 15.8333 31.6034 15.8333 30.7167V24.7C15.8333 23.8133 15.8333 23.3699 15.6608 23.0312C15.509 22.7333 15.2667 22.491 14.9688 22.3392C14.6301 22.1667 14.1868 22.1667 13.3 22.1667Z" stroke="#D29712" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>"
+        },
+        {
+          "id": 4,
+          "title": "Stay Updated",
+          "icon": "<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+<path d="M34.8346 12.6667V19M16.2305 8.70832H10.768C8.10772 8.70832 6.77759 8.70832 5.76151 9.22603C4.86774 9.68143 4.14108 10.4081 3.68569 11.3019C3.16797 12.3179 3.16797 13.6481 3.16797 16.3083L3.16797 18.2083C3.16797 19.6838 3.16797 20.4215 3.40902 21.0035C3.73042 21.7794 4.34688 22.3959 5.1228 22.7173C5.70475 22.9583 6.44249 22.9583 7.91797 22.9583V29.6875C7.91797 30.0551 7.91797 30.2389 7.93322 30.3937C8.0813 31.8972 9.27079 33.0867 10.7743 33.2347C10.9291 33.25 11.1129 33.25 11.4805 33.25C11.8481 33.25 12.0319 33.25 12.1867 33.2347C13.6902 33.0867 14.8796 31.8972 15.0277 30.3937C15.043 30.2389 15.043 30.0551 15.043 29.6875V22.9583H16.2305C19.0273 22.9583 22.4486 24.4576 25.0881 25.8964C26.6279 26.7358 27.3979 27.1555 27.9021 27.0938C28.3697 27.0365 28.7233 26.8266 28.9974 26.4434C29.293 26.0302 29.293 25.2035 29.293 23.55V8.1166C29.293 6.46314 29.293 5.63641 28.9974 5.22322C28.7233 4.84008 28.3697 4.63012 27.9021 4.57285C27.3979 4.51109 26.6279 4.9308 25.0881 5.77021C22.4486 7.20908 19.0273 8.70832 16.2305 8.70832Z" stroke="#D29712" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>"
+        },
+        {
+          "id": 5,
+          "title": "Achieve More",
+          "icon": "<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+<path d="M27.0972 24.3172C26.6686 24.8018 26.2188 25.2803 25.7485 25.7506C18.9469 32.5522 10.4256 35.0585 6.71558 31.3485C4.17211 28.8051 4.55036 24.0002 7.23137 19.0384M10.9066 13.815C11.3526 13.3079 11.8219 12.8072 12.3135 12.3156C19.1151 5.51395 27.6365 3.00767 31.3465 6.71765C33.8917 9.26288 33.5112 14.0726 30.8251 19.038M25.7485 12.3156C32.5502 19.1172 35.0564 27.6386 31.3465 31.3485C27.6365 35.0585 19.1151 32.5522 12.3135 25.7506C5.51188 18.949 3.0056 10.4276 6.71558 6.71765C10.4256 3.00767 18.9469 5.51395 25.7485 12.3156ZM20.5814 19C20.5814 19.8745 19.8725 20.5834 18.9981 20.5834C18.1236 20.5834 17.4147 19.8745 17.4147 19C17.4147 18.1256 18.1236 17.4167 18.9981 17.4167C19.8725 17.4167 20.5814 18.1256 20.5814 19Z" stroke="#D29712" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>"
+        }
+        {
+          "id": 5,
+          "title": "Achieve More",
+          "icon": "<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+<path d="M25.3346 28.5L28.5013 31.6667L34.8346 25.3333M19.0013 23.75H12.668C9.71701 23.75 8.24152 23.75 7.07764 24.2321C5.5258 24.8749 4.29286 26.1078 3.65007 27.6597C3.16797 28.8236 3.16797 30.299 3.16797 33.25M24.543 5.21037C26.864 6.1499 28.5013 8.42541 28.5013 11.0833C28.5013 13.7413 26.864 16.0168 24.543 16.9563M21.3763 11.0833C21.3763 14.5811 18.5408 17.4167 15.043 17.4167C11.5452 17.4167 8.70964 14.5811 8.70964 11.0833C8.70964 7.58553 11.5452 4.75 15.043 4.75C18.5408 4.75 21.3763 7.58553 21.3763 11.0833Z" stroke="#D29712" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>"
+        }
+      ];
+  
+      const cardContainer = document.getElementById("card-container");
+  
+      cardData.forEach(card => {
+          const cardDiv = document.createElement('div');
+          cardContainer.className = 'col-span-12';
+          cardDiv.className='py-[23px] px-6 border border-gray-300 flex items-center gap-6 justify-between  cursor-pointer plat-form-card-wrapper sm:mb-6 mb-4'
+          cardDiv.innerHTML = `
+             ${card.icon}
+              <div class="flex items-center gap-2 text-xl text-[#111928] font-semibold">
+                <span class="card-title">${card.title}</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M9.51562 7.03454L14.4811 12.0001L9.51562 16.9656" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+          `;
+  
+          cardDiv.addEventListener('click', () => {
+              alert('Card ID: ' + card.id);
+          });
+  
+          cardContainer.appendChild(cardDiv);
+      });
+  </script> -->
   </body>
 </html>
