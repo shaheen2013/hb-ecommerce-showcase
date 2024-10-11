@@ -1,4 +1,60 @@
 body{
       font-family: "Inter", sans-serif;
 }
-
+.swiper-slide{
+      height: 100%;
+      img{
+            height: 100%;
+      }
+   
+}
+.swiper-pagination-bullet{
+      background: #FFFFFFB2;
+      opacity: 1;
+      &.swiper-pagination-bullet-active{
+      background: #D29712;
+      width: 24px ;
+      border-radius: 66px;
+}
+}
+.help-section-wrapper{
+      .custom-after {
+            position: relative;
+        }
+        .custom-after::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%; 
+            transform: translateY(-50%); 
+            background: url('./img/line.png') center; 
+            width: 100%; 
+            height: 100%; 
+            background-repeat: no-repeat;
+        }
+        .custom-after::before {
+            content: '';
+            position: absolute;
+           right: 50%;
+            top: 50%; 
+            transform: translateY(-50%); 
+            background: url('./img/line.png') center; 
+            width: 100%; 
+            height: 100%; 
+            background-repeat: no-repeat;
+            &:first-child{
+                  content: none;
+            }
+        }
+        .custom-after:first-child::before {
+            display: none; 
+        }
+      
+        .col-span-4{
+            &:last-child{
+                  .custom-after::after {
+                        display: none; 
+                    }
+            }
+        }
+}

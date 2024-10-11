@@ -1,65 +1,454 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./index.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-<!-- header -->
-<div class="bg-[#1C395F]">
-  <div class="container m-auto py-4 px-4 flex items-center justify-between">
-  <img class="h-12 max-w-[120px]" src="./img/logo.png" alt="">
-  <div class="flex items-center gap-16">
- <a href="#promise" class="text-base font-medium text-white hover:text-[#D29712]">Our Promise</a>
- <a href="#whyChooseUs" class="text-base font-medium text-white hover:text-[#D29712]">Why Choose Us?</a>
- <a href="#advantages" class="text-base font-medium text-white hover:text-[#D29712]">Advantages</a>
- <a href="#reviews" class="text-base font-medium text-white hover:text-[#D29712]">Reviews</a>
- <a href="#faq" class="text-base font-medium text-white hover:text-[#D29712]">FAQs</a>
-  </div>
-  </div>
-  <div class="h-2 bg-[#D29712]"></div>
-</div>
-<div class="bg-[url('./img/bg.png')] bg-no-repeat bg-cover h-[887px] w-full">
-   <div class="container m-auto px-4 h-full">
-   <div class="grid grid-cols-12 gap-8 h-full">
-      <div class="md:col-span-7 col-span-12 flex flex-col justify-center">
-        <div class="p-1 rounded-full flex items-center border border-[#D29712] bg-[#FFFBF3] max-w-[451px]">
-          <p class="text-sm font-medium hover:text-white leading-5 hover:bg-[#D29712] rounded-full px-2 py-1 w-full text-[#D29712] cursor-pointer">Design or production woes?</p>
-          <p class="text-sm font-medium hover:text-white leading-5 hover:bg-[#D29712] rounded-full px-2 py-1 w-full text-[#D29712] cursor-pointer">Design or production woes?</p>
-    </div>
-    <p class="max-w-[736px] text-5xl font-bold leading-[62px] text-[#1C395F] mt-4">Turnkey cloud-based software, curated for the <span class="text-[#D29712]">Interior Design industry</span></p>
-    <p class="text-xl text-[#435B7A] sm:mt-5 mt-4">Connecting exquisite taste worldwide</p>
-    <div class="grid grid-cols-12 md:gap-6 gap-4 xl:mt-16 md:mt-12 mt-8">
-   <div class="xl:col-span-6 col-span-12 bg-[url('./img/small-card-img.png')] bg-no-repeat bg-cover h-[227px] flex flex-col justify-end p-4">
- <h3 class="text-white text-xl font-semibold leading-8">For Manufacturers</h3>
- <p class="text-sm leading-6 text-white mt-2 mb-2">Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ut elit tellus.</p>
- <a class="cursor-pointer flex items-center gap-3 bg-red-200 hover:bg-[#D29712] justify-center py-2 px-6  text-base font-semibold text-white border border-white bg-white/20 backdrop-blur-sm hover:border-[#D29712]">
-  Get Started <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-  <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg> </a>
-   </div>
-   <div class="xl:col-span-6 col-span-12 bg-[url('./img/small-card-img-2.png')] bg-no-repeat bg-cover h-[227px] flex flex-col justify-end p-4">
- <h3 class="text-white text-xl font-semibold leading-8">For Designers</h3>
- <p class="text-sm leading-6 text-white mt-2 mb-2">Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ut elit tellus.</p>
- <a class="cursor-pointer flex items-center gap-3 bg-red-200 hover:bg-[#D29712] justify-center py-2 px-6  text-base font-semibold text-white border border-white bg-white/20 backdrop-blur-sm hover:border-[#D29712]">
-  Start Designing <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-  <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg> </a>
-   </div>
-    </div>
-      </div>
-      <div class="col-span-5">
-        right site
-      </div>
-   </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-   </div>
-</div>
-</body>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="bg-[#1C395F]">
+      <div class="container m-auto py-4 px-4 flex items-center justify-between">
+        <img class="h-12 max-w-[120px]" src="./img/logo.png" alt="" />
+        <div class="flex items-center gap-16">
+          <a
+            href="#promise"
+            class="text-base font-medium text-white hover:text-[#D29712]"
+            >Our Promise</a
+          >
+          <a
+            href="#whyChooseUs"
+            class="text-base font-medium text-white hover:text-[#D29712]"
+            >Why Choose Us?</a
+          >
+          <a
+            href="#advantages"
+            class="text-base font-medium text-white hover:text-[#D29712]"
+            >Advantages</a
+          >
+          <a
+            href="#reviews"
+            class="text-base font-medium text-white hover:text-[#D29712]"
+            >Reviews</a
+          >
+          <a
+            href="#faq"
+            class="text-base font-medium text-white hover:text-[#D29712]"
+            >FAQs</a
+          >
+        </div>
+      </div>
+      <div class="h-2 bg-[#D29712]"></div>
+    </div>
 
+    <!-- hero section -->
+    <div
+      class="bg-[url('./img/bg.png')] bg-no-repeat bg-cover h-[715px] w-full"
+    >
+      <div class="container m-auto px-4 h-full">
+        <div class="grid grid-cols-12 gap-8 h-full">
+          <div class="md:col-span-7 col-span-12 flex flex-col justify-center">
+            <div
+              class="p-1 rounded-full flex items-center border border-[#D29712] bg-[#FFFBF3] max-w-[451px]"
+            >
+              <p
+                class="text-sm font-medium hover:text-white leading-5 hover:bg-[#D29712] rounded-full px-2 py-1 w-full text-[#D29712] cursor-pointer bg-[#D29712] text-white active"
+              >
+                Design or production woes?
+              </p>
+              <p
+                class="text-sm font-medium hover:text-white leading-5 hover:bg-[#D29712] rounded-full px-2 py-1 w-full text-[#D29712] cursor-pointer"
+              >
+                Design or production woes?
+              </p>
+            </div>
+            <p
+              class="max-w-[736px] text-5xl font-bold leading-[62px] text-[#1C395F] mt-4"
+            >
+              Turnkey cloud-based software, curated for the
+              <span class="text-[#D29712]">Interior Design industry</span>
+            </p>
+            <p class="text-xl text-[#435B7A] sm:mt-5 mt-4">
+              Connecting exquisite taste worldwide
+            </p>
+            <div
+              class="grid grid-cols-12 md:gap-6 gap-4 xl:mt-16 md:mt-12 mt-8"
+            >
+              <div
+                class="xl:col-span-6 col-span-12 bg-[url('./img/small-card-img.png')] bg-no-repeat bg-cover h-[227px] flex flex-col justify-end p-4"
+              >
+                <h3 class="text-white text-xl font-semibold leading-8">
+                  For Manufacturers
+                </h3>
+                <p class="text-sm leading-6 text-white mt-2 mb-2">
+                  Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ut
+                  elit tellus.
+                </p>
+                <a
+                  class="cursor-pointer flex items-center gap-3 bg-red-200 hover:bg-[#D29712] justify-center py-2 px-6 text-base font-semibold text-white border border-white bg-white/20 backdrop-blur-sm hover:border-[#D29712]"
+                >
+                  Get Started
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M4 12H20M20 12L14 6M20 12L14 18"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="xl:col-span-6 col-span-12 bg-[url('./img/small-card-img-2.png')] bg-no-repeat bg-cover h-[227px] flex flex-col justify-end p-4"
+              >
+                <h3 class="text-white text-xl font-semibold leading-8">
+                  For Designers
+                </h3>
+                <p class="text-sm leading-6 text-white mt-2 mb-2">
+                  Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Ut
+                  elit tellus.
+                </p>
+                <a
+                  class="cursor-pointer flex items-center gap-3 bg-red-200 hover:bg-[#D29712] justify-center py-2 px-6 text-base font-semibold text-white border border-white bg-white/20 backdrop-blur-sm hover:border-[#D29712]"
+                >
+                  Start Designing
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M4 12H20M20 12L14 6M20 12L14 18"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-5">
+            <div class="h-full">
+              <div class="swiper-container mySwiper overflow-hidden h-full">
+                <div class="swiper-wrapper h-full"></div>
+                <div
+                  class="flex items-center justify-center relative bottom-12 z-50"
+                >
+                  <div
+                    class="relative flex items-center justify-between gap-3 min-w-[250px]"
+                  >
+                    <div class="swiper-button-pre" id="prevButtonn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M15 5L8 12L15 19"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="swiper-pagination static flex items-center justify-center"
+                    ></div>
+                    <div id="nextButtonn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M9 5L16 12L9 19"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- help section -->
+    <div class="bg-white sm:py-24 py-12">
+      <div class="container m-auto px-4">
+        <h3 class="text-4xl font-bold leading-[54px] text-center">
+          We Help You to <br /><span class="text-[#D29712]">
+            Overcome Challenges</span
+          >
+        </h3>
+        <div class="flex items-cener justify-center">
+          <p class="text-center text-lg text-[#435B7A] mt-4 max-w-[736px]">
+            Whether you’re designing or manufacturing, our platform brings you
+            the tools to streamline every step—from concept to completion.
+          </p>
+        </div>
+        <div class="grid grid-cols-12 help-section-wrapper mt-4">
+          <div class="col-span-4">
+            <div class="flex items-center custom-after justify-center">
+              <img src="./img/seamless.png" alt="" />
+              <img src="./img/right.png" alt="" />
+            </div>
+            <h4
+              class="text-xl font-semibold text-[#111928] mt-2 text-center px-4"
+            >
+              Seamless Collaboration for Success
+            </h4>
+            <p class="text-base text-[#435B7A] mt-3 text-center px-4">
+              Bring your design and manufacturing teams closer together,
+              ensuring flawless execution on every project.
+            </p>
+          </div>
+          <div class="col-span-4">
+            <div class="flex items-center custom-after justify-center">
+              <img src="./img/right-1.png" alt="" />
+              <img src="./img/effective-c.png" alt="" />
+              <img src="./img/right.png" alt="" />
+            </div>
+            <h4
+              class="text-xl font-semibold text-[#111928] mt-2 text-center px-4"
+            >
+              Effective Marketing Tools to Showcase Your Work
+            </h4>
+            <p class="text-base text-[#435B7A] mt-3 text-center px-4">
+              Promote your designs or products directly with tailored marketing
+              tools that get your business noticed.
+            </p>
+          </div>
+          <div class="col-span-4">
+            <div class="flex items-center custom-after justify-center px-4">
+              <img src="./img/right-1.png" alt="" />
+              <img src="./img/gain-c.png" alt="" />
+            </div>
+            <h4
+              class="text-xl font-semibold text-[#111928] mt-2 text-center px-4"
+            >
+              Gain More Clients, Expand Your Reach
+            </h4>
+            <p class="text-base text-[#435B7A] mt-3 text-center px-4">
+              Showcase your portfolio, gain reviews, and build lasting
+              relationships with clients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Platform -->
+    <div class="bg-[#F9F9F9] sm:py-24 py-12">
+      <div class="container px-4 m-auto">
+        <h3 class="text-4xl font-bold leading-[54px] text-center">
+          Why We’re the Perfect Platform for <br /><span class="text-[#D29712]">
+            Your Business Success</span
+          >
+        </h3>
+        <div class="flex items-cener justify-center">
+          <p class="text-center text-lg text-[#435B7A] mt-4 max-w-[736px]">
+            Maximize your reach, flexibility, and earnings with our tailored
+            platform for designers and manufacturers.
+          </p>
+        </div>
+        <div class="flex items-center justify-center md:mt-8 mt-6">
+          <a
+            href="#"
+            class="py-2 px-6 m-auto bg-[#D29712] max-w-[240px] w-full text-center text-base text-white font-semibold hover:bg-slate-600"
+            >Get Started</a
+          >
+        </div>
+        <div class="grid grid-cols-12 gap-4 md:mt-12 sm:mt-8 mt-6">
+          <div class="md:col-span-4 span-12 flex flex-col justify-center">
+            <div class="p-6 border border-gray-300 sm:mb-6 mb-4">
+              <div class="flex gap-8 justify-end">
+                <div>
+                  <h3
+                    class="text-xl font-semibold text-[#111928] mb-3 text-end"
+                  >
+                    Gain More Clients
+                  </h3>
+                  <p class="text-base text-[#435B7A] text-end">
+                    Our platform connects you directly with potential clients
+                    looking for high-quality designs and products. Increase your
+                    customer base effortlessly and build long-term
+                    relationships.
+                  </p>
+                </div>
+                <img
+                  src="./img/gain-client.png"
+                  class="h-[54px] w-[54px]"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="p-6 border border-gray-300">
+              <div class="flex gap-8 justify-end">
+                <div>
+                  <h3
+                    class="text-xl font-semibold text-[#111928] mb-3 text-end"
+                  >
+                    Work with Flexibility
+                  </h3>
+                  <p class="text-base text-[#435B7A] text-end">
+                    Whether you’re a solo designer or a large-scale
+                    manufacturer, our platform adapts to your unique workflow.
+                    From custom solutions to collaborative tools, we’ve got the
+                    flexibility you need.
+                  </p>
+                </div>
+                <img
+                  src="./img/work-with.png"
+                  class="h-[54px] w-[54px]"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-4 span-12">
+            <div class="max-h-[552px] max-w-[552px]">
+              <img
+                src="./img/circle-pictrue.png"
+                class="h-full w-full"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="md:col-span-4 span-12">
+            <div class="md:col-span-4 span-12 flex flex-col justify-center h-full">
+              <div class="p-6 border border-gray-300 sm:mb-6 mb-4">
+                <div class="flex gap-8 justify-start">
+                  <img
+                    src="./img/incrase.png"
+                    class="h-[54px] w-[54px]"
+                    alt=""
+                  />
+                  <div>
+                    <h3
+                      class="text-xl font-semibold text-[#111928] mb-3 text-start"
+                    >
+                    Increase Your Earnings
+                    </h3>
+                    <p class="text-base text-[#435B7A] text-start">
+                      Expand your earning potential with new project opportunities. Our platform opens doors to high-value clients and premium projects, ensuring you get the best return on your work.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 border border-gray-300">
+                <div class="flex gap-8 justify-start">
+                  <img
+                    src="./img/boost.png"
+                    class="h-[54px] w-[54px]"
+                    alt=""
+                  />
+                  <div>
+                    <h3
+                      class="text-xl font-semibold text-[#111928] mb-3 text-start"
+                    >
+                    Boost Your Exposure
+                    </h3>
+                    <p class="text-base text-[#435B7A] text-start">
+                      Showcase your portfolio to a wider audience. Get featured in front of clients actively looking for designers and manufacturers, and let your work speak for itself.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const images = [
+          "https://swiperjs.com/demos/images/nature-1.jpg",
+          "https://swiperjs.com/demos/images/nature-2.jpg",
+          "https://swiperjs.com/demos/images/nature-3.jpg",
+          "https://swiperjs.com/demos/images/nature-4.jpg",
+          "https://swiperjs.com/demos/images/nature-5.jpg",
+          "https://swiperjs.com/demos/images/nature-5.jpg",
+        ];
+
+        const swiperWrapper = document.querySelector(".swiper-wrapper");
+
+        images.forEach((imageUrl) => {
+          const swiperSlide = document.createElement("div");
+          swiperSlide.classList.add("swiper-slide");
+          const imgElement = document.createElement("img");
+          imgElement.src = imageUrl;
+          imgElement.alt = "Slide Image";
+          swiperSlide.appendChild(imgElement);
+          swiperWrapper.appendChild(swiperSlide);
+        });
+
+        const swiper = new Swiper(".mySwiper", {
+          effect: "slide",
+
+          loop: true,
+          autoplay: {
+            delay: 2500,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 1,
+            },
+          },
+        });
+
+        const prevButton = document.getElementById("prevButtonn");
+        prevButton.addEventListener("click", () => {
+          swiper.slidePrev();
+        });
+
+        const nextButton = document.getElementById("nextButtonn");
+        nextButton.addEventListener("click", () => {
+          swiper.slideNext();
+        });
+      });
+    </script>
+  </body>
 </html>
