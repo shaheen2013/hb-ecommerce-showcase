@@ -94,6 +94,18 @@ body{
                   }
             }
       }
+      &.active{
+            background:#D29712 ;
+            transition: .3s all;
+            span{
+                  color: #ffff;
+            }
+            svg{
+                  path{
+                        stroke: #fff;
+                  }
+            }
+      }
      
 }
 .carouser-action-two{

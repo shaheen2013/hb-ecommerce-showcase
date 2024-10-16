@@ -581,7 +581,8 @@
             effectively, and promote your business—all in one place.
           </p>
         </div>
-        <div class="grid grid-cols-12 gap-6 md:mt-12 mt-6">
+        <!-- desktop view -->
+        <div class="grid grid-cols-12 gap-6 md:mt-12 mt-6 ">
           <div class="col-span-4">
             <div id="card-container"></div>
           </div>
@@ -604,6 +605,68 @@
             </div>
           </div>
         </div>
+
+         <!-- Mobile view with dynamic content change -->
+
+  <div class="content-box   cursor-pointer hidden "  data-content='
+  <div id="image-container" class="bg-[url(./img/platform-bg.png)] bg-no-repeat bg-cover h-[600px] p-6 flex flex-col justify-end items-end">
+    <div id="image-content">
+      <p class="text-xl font-medium text-white mb-6 max-w-[920px]">
+        Discover new opportunities with our network of professionals.
+      </p>
+      <a href="#" class="uppercase py-2 px-12 bg-[#D29712] max-w-[240px] w-full text-center text-base text-white font-semibold hover:bg-[#1C395F]">Discover</a>
+    </div>
+  </div>'>
+    <div
+    class="py-[23px] px-6 border border-gray-300 flex items-center gap-6 justify-between cursor-pointer plat-form-card-wrapper toggle-button"
+    data-id="1"
+
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+      <path d="M11.8337 17.4604L6.26699 10.502C5.92046 10.0689 5.7472 9.85228 5.62399 9.61111C5.51468 9.39715 5.43478 9.16939 5.38648 8.93402C5.33203 8.66873 5.33203 8.39137 5.33203 7.83666V6.93332C5.33203 5.43985 5.33203 4.69311 5.62268 4.12268C5.87834 3.62092 6.28629 3.21297 6.78806 2.95731C7.35849 2.66666 8.10522 2.66666 9.5987 2.66666H22.3987C23.8922 2.66666 24.6389 2.66666 25.2093 2.95731C25.7111 3.21297 26.1191 3.62092 26.3747 4.12268C26.6654 4.69311 26.6654 5.43985 26.6654 6.93332V7.83666C26.6654 8.39137 26.6654 8.66873 26.6109 8.93402C26.5626 9.16939 26.4827 9.39715 26.3734 9.61111C26.2502 9.85228 26.0769 10.0689 25.7304 10.502L20.1637 17.4604M6.66544 3.99998L15.9988 16L25.332 3.99998M20.7127 17.9526C23.3162 20.5561 23.3162 24.7772 20.7127 27.3807C18.1093 29.9842 13.8882 29.9842 11.2846 27.3807C8.68116 24.7772 8.68116 20.5561 11.2846 17.9526C13.8881 15.3491 18.1092 15.3491 20.7127 17.9526Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div class="flex items-center gap-2 text-xl text-[#111928] font-semibold">
+      <span class="card-title">Get Recognized in the Industry</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M9.51562 7.03454L14.4811 12.0001L9.51562 16.9656" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+  <div class="content-display  hidden "></div>
+  </div>
+
+  <div class="content-box   cursor-pointer" hidden  data-content='
+  <div id="image-container" class="bg-[url(./img/platform-bg.png)] bg-no-repeat bg-cover h-[600px] p-6 flex flex-col justify-end items-end">
+    <div id="image-content">
+      <p class="text-xl font-medium text-white mb-6 max-w-[920px]">
+        Discover new opportunities with our network of professionals.
+      </p>
+      <a href="#" class="uppercase py-2 px-12 bg-[#D29712] max-w-[240px] w-full text-center text-base text-white font-semibold hover:bg-[#1C395F]">Discover</a>
+    </div>
+  </div>'>
+    <div
+    class="py-[23px] px-6 border border-gray-300 flex items-center gap-6 justify-between cursor-pointer plat-form-card-wrapper toggle-button"
+    data-id="1"
+
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+      <path d="M11.8337 17.4604L6.26699 10.502C5.92046 10.0689 5.7472 9.85228 5.62399 9.61111C5.51468 9.39715 5.43478 9.16939 5.38648 8.93402C5.33203 8.66873 5.33203 8.39137 5.33203 7.83666V6.93332C5.33203 5.43985 5.33203 4.69311 5.62268 4.12268C5.87834 3.62092 6.28629 3.21297 6.78806 2.95731C7.35849 2.66666 8.10522 2.66666 9.5987 2.66666H22.3987C23.8922 2.66666 24.6389 2.66666 25.2093 2.95731C25.7111 3.21297 26.1191 3.62092 26.3747 4.12268C26.6654 4.69311 26.6654 5.43985 26.6654 6.93332V7.83666C26.6654 8.39137 26.6654 8.66873 26.6109 8.93402C26.5626 9.16939 26.4827 9.39715 26.3734 9.61111C26.2502 9.85228 26.0769 10.0689 25.7304 10.502L20.1637 17.4604M6.66544 3.99998L15.9988 16L25.332 3.99998M20.7127 17.9526C23.3162 20.5561 23.3162 24.7772 20.7127 27.3807C18.1093 29.9842 13.8882 29.9842 11.2846 27.3807C8.68116 24.7772 8.68116 20.5561 11.2846 17.9526C13.8881 15.3491 18.1092 15.3491 20.7127 17.9526Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div class="flex items-center gap-2 text-xl text-[#111928] font-semibold">
+      <span class="card-title">Get Recognized in the Industry</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M9.51562 7.03454L14.4811 12.0001L9.51562 16.9656" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+  <div class="content-display  hidden "></div>
+  </div>
+</div>
+
+
+
+            
+   
       </div>
     </div>
     <!-- sucess history -->
@@ -1491,6 +1554,7 @@
       ];
 
       const cardContainer = document.getElementById("card-container");
+      const cardContainerMobile = document.getElementById("card-container-mobile");
 
       cardData.forEach((card) => {
         const cardDiv = document.createElement("div");
@@ -1513,6 +1577,7 @@
 
         cardContainer.appendChild(cardDiv);
       });
+    
       function toggleFAQ(button) {
         const content = button.nextElementSibling;
         const plusIcon = button.querySelector(".plus-icon");
@@ -1545,6 +1610,23 @@
       closeCanvasBtn.addEventListener("click", () => {
         offCanvasMenu.classList.add("-translate-x-full");
       });
+
+      document.querySelectorAll('.content-box').forEach(function(box) {
+    box.addEventListener('click', function() {
+        const content = this.getAttribute('data-content');
+        const toggleButton = this.querySelector('.toggle-button');
+        const contentDisplay = this.querySelector('.content-display');
+        if (contentDisplay.classList.contains('hidden')) {
+            contentDisplay.innerHTML = content;
+            contentDisplay.classList.remove('hidden');
+            toggleButton.classList.add('active');
+        } else {
+            contentDisplay.classList.add('hidden');
+            toggleButton.classList.remove('active');
+        }
+    });
+});
+
     </script>
   </body>
 </html>
