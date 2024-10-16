@@ -81,3 +81,12 @@ body{
       }
      
 }
+.carouser-action-two{
+     &:hover{
+      svg{
+       path{
+            stroke: #ffff;
+       }
+      }
+     }
+}
