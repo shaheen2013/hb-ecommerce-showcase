@@ -133,3 +133,15 @@ body {
     display: block;
   }
 }
+.scrollbar-custom::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    .scrollbar-custom::-webkit-scrollbar-thumb {
+      background-color: #1C395F; 
+      border-radius: 4px; 
+    }
+    
+    .scrollbar-custom::-webkit-scrollbar-track {
+      background-color: #E5E7EB;
+    }

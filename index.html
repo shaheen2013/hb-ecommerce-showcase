@@ -680,7 +680,7 @@
     </div>
     <!-- Completion -->
     <div
-      class="md:py-16 py-8 bg-[url('./img/project-completion.png')] bg-no-repeat bg-cover"
+      class="py-16  bg-[url('./img/project-completion.png')] bg-no-repeat bg-cover"
     >
       <div class="container px-4 m-auto">
         <div
@@ -688,7 +688,7 @@
         >
           <div>
             <p
-              class="text-4xl font-bold leading-10 mb-4 text-white text-center"
+              class="sm:text-4xl text-3xl font-bold leading-10 mb-4 text-white text-center"
             >
               Let’s Take Your Projects from Concept to Completion
             </p>
@@ -709,136 +709,33 @@
     <!-- faq section -->
     <div class="md:py-16 py-8" id="faq">
       <div class="container px-4 m-auto">
-        <div class="flex items-end justify-between mb-12">
+        <div class="flex md:flex-row flex-col md:items-end items-center justify-between mb-12">
           <div>
-            <h1 class="text-4xl text-[#1C395F] leading-[54px] font-bold mb-5">
+            <h1 class="sm:text-4xl text-3xl text-[#1C395F] leading-[54px] font-bold mb-5 md:text-start text-center">
               Got Questions? <br />We’ve Got Answers!
             </h1>
-            <p class="text-lg text-[#435B7A]">
+            <p class="text-lg text-[#435B7A] md:text-start text-center">
               Everything you need to know about working with us, all in one
               place.
             </p>
           </div>
           <a
             href="#"
-            class="uppercase py-2 px-12 bg-[#D29712] max-w-[240px] w-full text-center text-base text-white font-semibold hover:bg-[#1C395F]"
+            class="uppercase py-2 px-12 bg-[#D29712] max-w-[240px] w-full text-center text-base text-white font-semibold hover:bg-[#1C395F] md:mt-0 mt-12"
             >Contact Us
           </a>
         </div>
         <!-- faq content -->
-        <div class="grid grid-cols-12 md:gap-12 gap-8">
+        <div class="md:grid grid-cols-12 md:gap-12 gap-8 flex flex-col-reverse flex-col">
           <div class="col-span-4">
-            <img class="max-h-[656px] w-full" src="./img/faq-1.png" alt="" />
+            <img class=" h-full w-full" src="./img/faq-1.png" alt="" />
           </div>
           <div class="col-span-8">
-            <div class="px-8 py-6 transition-colors duration-300 ease-in-out">
-              <button
-                class="w-full flex items-center justify-between text-left focus:outline-none"
-                onclick="toggleFAQ(this)"
-              >
-                <span class="text-lg font-medium text-gray-800">
-                  How does the platform help me as a designer or manufacturer?
-                </span>
+          
+            <div id="faq-items-content" class="max-h-[540px]  overflow-y-scroll scrollbar-custom">
 
-                <svg
-                  class="w-6 h-6 text-gray-400 plus-icon transform transition-transform duration-300 ease-in-out"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
-                    stroke="#98A2B3"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-
-                <svg
-                  class="w-6 h-6 text-gray-400 minus-icon transform transition-transform duration-300 ease-in-out hidden"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
-                    stroke="#98A2B3"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-
-              <div
-                class="faq-content mt-4 hidden text-gray-600 transition-max-height duration-300 ease-in-out overflow-hidden max-h-0"
-              >
-                <p>
-                  Our platform is designed to connect you with clients actively
-                  looking for top-notch designs and products. As a designer, you
-                  can showcase your portfolio, gain visibility, and collaborate
-                  with manufacturers seamlessly. For manufacturers, you’ll
-                  access a steady flow of projects from talented designers,
-                  helping you grow your production pipeline and reach new
-                  clients.
-                </p>
-              </div>
             </div>
-            <div class="px-8 py-6 transition-colors duration-300 ease-in-out">
-              <button
-                class="w-full flex items-center justify-between text-left focus:outline-none"
-                onclick="toggleFAQ(this)"
-              >
-                <span class="text-lg font-medium text-gray-800">
-                  What kind of clients can I expect to connect with?
-                </span>
-
-                <svg
-                  class="w-6 h-6 text-gray-400 plus-icon transform transition-transform duration-300 ease-in-out"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
-                    stroke="#98A2B3"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-
-                <svg
-                  class="w-6 h-6 text-gray-400 minus-icon transform transition-transform duration-300 ease-in-out hidden"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
-                    stroke="#98A2B3"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-
-              <div
-                class="faq-content mt-4 hidden text-gray-600 transition-max-height duration-300 ease-in-out overflow-hidden max-h-0"
-              >
-                <p>
-                  Our platform is designed to connect you with clients actively
-                  looking for top-notch designs and products. As a designer, you
-                  can showcase your portfolio, gain visibility, and collaborate
-                  with manufacturers seamlessly. For manufacturers, you’ll
-                  access a steady flow of projects from talented designers,
-                  helping you grow your production pipeline and reach new
-                  clients.
-                </p>
-              </div>
-            </div>
+          
           </div>
         </div>
       </div>
@@ -1589,7 +1486,107 @@ function generateSlides(data) {
   });
 }
 generateSlides(slideData);
+const faqData = [
+  {
+    question: "How does the platform help me as a designer or manufacturer?",
+    answer: "Our platform is designed to connect you with clients actively looking for top-notch designs and products. As a designer, you can showcase your portfolio, gain visibility, and collaborate with manufacturers seamlessly. For manufacturers, you’ll access a steady flow of projects from talented designers, helping you grow your production pipeline and reach new clients."
+  },
+  {
+    question: "How do I sign up and create a profile?",
+    answer: "Signing up is easy! Simply click the 'Sign Up' button on the homepage and follow the instructions to create a profile. You can then add details about your expertise, past work, and upload samples of your designs or products."
+  },
+  {
+    question: "Can I find long-term partnerships through the platform?",
+    answer: "Yes! Our platform is designed to foster long-term collaborations between designers and manufacturers. Many users have found ongoing partnerships that have led to successful repeat projects."
+  },
+  {
+    question: "What types of projects are available on the platform?",
+    answer: "The platform hosts a variety of projects across different industries, ranging from small design tasks to large-scale manufacturing contracts. Whether you’re a designer or manufacturer, there’s always something suited to your skill set."
+  },
+  {
+    question: "How does the payment process work?",
+    answer: "Payments are securely handled through the platform. Once a project is completed and both parties confirm the work, the payment is processed and released to the respective user’s account."
+  },
+  {
+    question: "Are there tools for project management and collaboration?",
+    answer: "Yes, our platform includes built-in tools for managing projects and collaborating with partners. You can track project milestones, communicate directly, and share files seamlessly."
+  },
+  {
+    question: "Is there support for international collaborations?",
+    answer: "Absolutely. Our platform is designed to support global collaborations, allowing you to work with partners from around the world while managing logistics, time zones, and communications efficiently."
+  },
+  {
+    question: "How do I get noticed as a designer?",
+    answer: "You can improve your visibility by building a detailed profile, showcasing a high-quality portfolio, and consistently delivering excellent work. Designers who engage with the community and maintain good reviews tend to attract more clients."
+  },
+  {
+    question: "Can manufacturers showcase their capabilities?",
+    answer: "Yes, manufacturers can create profiles that highlight their production capacity, equipment, and expertise. This helps designers and other clients understand what you can offer and how you can support their projects."
+  },
+  {
+    question: "Is there a vetting process for designers and manufacturers?",
+    answer: "To ensure quality, all users go through a basic verification process when signing up. Additionally, ratings and reviews help maintain transparency, allowing users to evaluate potential partners before committing to a project."
+  }
+];
 
+function faqGenerateData(data){
+  const faqContentWrapper = document.getElementById('faq-items-content');
+  data.forEach(item=>{
+    const faqElement=`<div class="px-8 py-6 transition-colors duration-300 ease-in-out">
+              <button
+                class="w-full flex items-center justify-between text-left focus:outline-none gap-4"
+                onclick="toggleFAQ(this)"
+              >
+                <span class="text-lg font-medium text-gray-800">
+                ${item?.question}
+                </span>
+
+                <div>
+                  <svg
+                  class="w-6 h-6 text-gray-400 plus-icon transform transition-transform duration-300 ease-in-out"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                    stroke="#98A2B3"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <svg
+                  class="w-6 h-6 text-gray-400 minus-icon transform transition-transform duration-300 ease-in-out hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                    stroke="#98A2B3"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                </div>
+              </button>
+
+              <div
+                class="faq-content mt-4 hidden text-gray-600 transition-max-height duration-300 ease-in-out overflow-hidden max-h-0"
+              >
+                <p>
+                ${item?.answer}
+                </p>
+              </div>
+            </div>`
+            faqContentWrapper.innerHTML += faqElement;
+  })
+
+}
+faqGenerateData(faqData)
     </script>
   </body>
 </html>
