@@ -1,119 +1,135 @@
-
 html {
-      scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.pp-eiko-font {
+  font-family: "PP Eiko Medium";
+}
+.swiper-slide {
+  height: 100%;
+  width: 100% !important;
+  img {
+    height: 100%;
+    width: 100% !important;
+  }
+}
+.swiper-pagination-bullet {
+  background: #ffffffb2;
+  opacity: 1;
+  &.swiper-pagination-bullet-active {
+    background: #d29712;
+    width: 24px;
+    border-radius: 66px;
+  }
+}
+.help-section-wrapper {
+  .custom-after {
+    position: relative;
+  }
+  .custom-after::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("./img/line.png") center;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+  .custom-after::before {
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("./img/line.png") center;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    &:first-child {
+      content: none;
     }
-body{
-      font-family: "Poppins", sans-serif;
+  }
+  .custom-after:first-child::before {
+    display: none;
+  }
 
-}
-.pp-eiko-font{
-      font-family: "PP Eiko Medium";
-}
-.swiper-slide{
-      height: 100%;
-      width: 100% !important;
-      img{
-            height: 100%;
-            width: 100% !important;
+  .col-span-4 {
+    &:last-child {
+      .custom-after::after {
+        display: none;
       }
-   
+    }
+  }
+  @media only screen and (max-width: 667px) {
+    .custom-after::after {
+      display: none;
+    }
+    .custom-after::after {
+      display: none;
+    }
+  }
 }
-.swiper-pagination-bullet{
-      background: #FFFFFFB2;
-      opacity: 1;
-      &.swiper-pagination-bullet-active{
-      background: #D29712;
-      width: 24px ;
-      border-radius: 66px;
-}
-}
-.help-section-wrapper{
-      .custom-after {
-            position: relative;
-        }
-        .custom-after::after {
-            content: '';
-            position: absolute;
-            left: 50%;
-            top: 50%; 
-            transform: translateY(-50%); 
-            background: url('./img/line.png') center; 
-            width: 100%; 
-            height: 100%; 
-            background-repeat: no-repeat;
-        }
-        .custom-after::before {
-            content: '';
-            position: absolute;
-           right: 50%;
-            top: 50%; 
-            transform: translateY(-50%); 
-            background: url('./img/line.png') center; 
-            width: 100%; 
-            height: 100%; 
-            background-repeat: no-repeat;
-            &:first-child{
-                  content: none;
-            }
-        }
-        .custom-after:first-child::before {
-            display: none; 
-        }
-      
-        .col-span-4{
-            &:last-child{
-                  .custom-after::after {
-                        display: none; 
-                    }
-            }
-        }
-        @media only screen and (max-width: 667px) {
-            .custom-after::after{
-                  display: none;
-            }
-            .custom-after::after{
-                  display: none;
-            }
-          }
-}
-.plat-form-card-wrapper{
-      svg{
-            path{
-                  stroke: #D29712;
-            }
+.plat-form-card-wrapper {
+  svg {
+    path {
+      stroke: #d29712;
+    }
+  }
+  &:hover {
+    background: #d29712;
+    transition: 0.3s all;
+    span {
+      color: #ffff;
+    }
+    svg {
+      path {
+        stroke: #fff;
       }
-      &:hover{
-            background:#D29712 ;
-            transition: .3s all;
-            span{
-                  color: #ffff;
-            }
-            svg{
-                  path{
-                        stroke: #fff;
-                  }
-            }
+    }
+  }
+  &.active {
+    background: #d29712;
+    transition: 0.3s all;
+    span {
+      color: #ffff;
+    }
+    svg {
+      path {
+        stroke: #fff;
       }
-      &.active{
-            background:#D29712 ;
-            transition: .3s all;
-            span{
-                  color: #ffff;
-            }
-            svg{
-                  path{
-                        stroke: #fff;
-                  }
-            }
-      }
-     
+    }
+  }
 }
-.carouser-action-two{
-     &:hover{
-      svg{
-       path{
-            stroke: #ffff;
-       }
+.carouser-action-two {
+  &:hover {
+    svg {
+      path {
+        stroke: #ffff;
       }
-     }
+    }
+  }
+}
+.image-content {
+  display: none;
+}
+.active {
+  .plat-form-card-wrapper {
+    background: #d29712;
+    transition: 0.3s all;
+    span {
+      color: #ffff;
+    }
+    svg {
+      path {
+        stroke: #fff;
+      }
+    }
+  }
+  .image-content {
+    display: block;
+  }
 }
