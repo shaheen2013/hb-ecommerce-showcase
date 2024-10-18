@@ -13,6 +13,9 @@ body {
   img {
     height: 100%;
     width: 100% !important;
+    min-height: 500px !important;
+    object-fit: cover;
+  
   }
 }
 .swiper-pagination-bullet {
